@@ -60,7 +60,9 @@
       <section class="hero-title">
         <div class="container">
           <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="btn-title">Заказать услугу</button>
+          <button type="button" class="btn-title" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="preferences">
@@ -118,7 +120,7 @@
           </ul>
         </div>
       </section>
-      <section class="professional">
+      <section class="professional test">
         <div class="container">
           <h2 class="professional-title">Чем мы занимаемся</h2>
           <ul class="professional-list">
@@ -128,9 +130,11 @@
                 alt="Планшет, клавиатура, руки"
                 width="370"
               />
+              <p class="professional-thumb-text">Десктопные приложения</p>
             </li>
             <li class="professional-item">
               <img src="./images/box2.jpg" alt="Телефон в руках" width="370" />
+              <p class="professional-thumb-text">Мобильные приложения</p>
             </li>
             <li class="professional-item">
               <img
@@ -138,6 +142,7 @@
                 alt="Разметка цветов в планшете"
                 width="370"
               />
+              <p class="professional-thumb-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -427,5 +432,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button">
+          <svg data-modal-close width="18" height="18">
+            <use href="./images/modal-close.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
